@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudentChat</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="sidebar">
+
+        <div class="sidebar-header">
+            <h2>StudentChat</h2>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                placeholder="Search chats..."
+            >
+        </div>
+
+        <div class="chat-list">
+
+            <div class="chat active">
+                <div class="avatar">A</div>
+
+                <div class="chat-info">
+                    <div class="chat-name">Alex</div>
+                    <div class="chat-preview">
+                        Hey, are you done?
+                    </div>
+                </div>
+
+                <div class="chat-time">
+                    10:15
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="avatar">S</div>
+
+                <div class="chat-info">
+                    <div class="chat-name">Sarah</div>
+                    <div class="chat-preview">
+                        See you tomorrow.
+                    </div>
+                </div>
+
+                <div class="chat-time">
+                    09:30
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="avatar">J</div>
+
+                <div class="chat-info">
+                    <div class="chat-name">John</div>
+                    <div class="chat-preview">
+                        Lecture starts at 8.
+                    </div>
+                </div>
+
+                <div class="chat-time">
+                    Yesterday
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="chat-area">
+
+        <div class="chat-header">
+
+            <div class="avatar">
+                A
+            </div>
+
+            <div>
+
+                <h3>Alex</h3>
+
+                <small>
+                    Online
+                </small>
+
+            </div>
+
+        </div>
+
+        <div
+            class="messages"
+            id="messages"
+        >
+
+            <div class="message received">
+
+                Hey 👋
+
+                <span>
+                    10:00
+                </span>
+
+            </div>
+
+            <div class="message sent">
+
+                Hi Alex!
+
+                <span>
+                    10:01
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="message-box">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type a message..."
+            >
+
+            <button
+                id="sendBtn"
+            >
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
